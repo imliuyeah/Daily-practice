@@ -1,0 +1,92 @@
+
+.cr-container .cr-bgimg div span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transform: scale(1.3);
+	opacity: .7;
+}
+.cr-container input.cr-seleted-img-1:checked ~ .cr-bgimg div span:nth-child(1),
+.cr-container input.cr-seleted-img-2:checked ~ .cr-bgimg div span:nth-child(2),
+.cr-container input.cr-seleted-img-3:checked ~ .cr-bgimg div span:nth-child(3),
+.cr-container input.cr-seleted-img-4:checked ~ .cr-bgimg div span:nth-child(4)
+{
+	z-index: 10;
+	transform: scale(1);
+	opacity: 1;
+	-webkit-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	   -moz-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	    -ms-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	     -o-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	        transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;        
+}
+.cr-container input:checked ~ .cr-bgimg div span{
+	opacity: 0;
+	transform: scale(1.3);
+	-webkit-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	   -moz-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	    -ms-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	     -o-transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;
+	        transition:transform 0.8s ease-in-out , opacity 0.8s ease-in-out;  
+}
+/*文字部分效果*/
+.cr-titles h3{
+	position: absolute;
+	top: 220px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: #fff;
+	z-index: 10000;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+       -moz-transition: opacity 0.5s ease-in-out;
+        -ms-transition: opacity 0.5s ease-in-out;
+         -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+}
+.cr-titles h3 span:nth-child(1){
+	display: block;
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	font-weight: 800;
+	font-size: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 5px;
+}
+.cr-titles h3 span:nth-child(2){
+	display: block;
+	font-style: italic;
+	font-size: 14px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background:rgba(104,171,194,.7);
+}
+/*点击按钮n时，第n个h3的透明度为不透明*/
+.cr-container input.cr-seleted-img-1:checked ~ .cr-titles h3:nth-child(1),
+.cr-container input.cr-seleted-img-2:checked ~ .cr-titles h3:nth-child(2),
+.cr-container input.cr-seleted-img-3:checked ~ .cr-titles h3:nth-child(3),
+.cr-container input.cr-seleted-img-4:checked ~ .cr-titles h3:nth-child(4)
+{
+	opacity: 1;
+}
+.cr-container input.cr-seleted-img-1:checked ~ .cr-titles h3:nth-child(1) span:nth-child(1),
+.cr-container input.cr-seleted-img-2:checked ~ .cr-titles h3:nth-child(2) span:nth-child(1),
+.cr-container input.cr-seleted-img-3:checked ~ .cr-titles h3:nth-child(3) span:nth-child(1),
+.cr-container input.cr-seleted-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(1)
+{
+	font-size: 40px;
+}
+.cr-titles h3 span:nth-child(1){
+	-webkit-transition: font-size 0.5s ease-in-out;
+       -moz-transition: font-size 0.5s ease-in-out;
+        -ms-transition: font-size 0.5s ease-in-out;
+         -o-transition: font-size 0.5s ease-in-out;
+            transition: font-size 0.5s ease-in-out;
+}

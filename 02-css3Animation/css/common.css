@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+section,header{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.clr{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+/*通用部分*/
+body{
+	background: rgba(177,240,240,.5);
+}
+.container{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.container .codrops-demos{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.container .codrops-demos a{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: rgba(104,171,194,.5);
+	margin: 20px;
+	line-height: 60px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 11px;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.05) inset;
+}
+.container .codrops-demos a:hover{
+	background: #4fa2c4;
+}
+.container .codrops-demos a.current-demo,
+.container .codrops-demos a.current-demo:hover{
+	background: rgba(255,255,255,.9);
+	color: rgba(104,171,194,1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+.cr-container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	position: relative;
+}
+.cr-container input{
+	display: none;
+}
+.cr-container label{
+	position: relative;
+	width: 150px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 32px;
+	margin-top: 350px;
+	color: #fff;
+	z-index: 999;
+}
+.cr-container label:before{
+	content: "";
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	background: rgba(130,195,217,.9);
+	box-shadow: 0 0 5px rgba(255,255,255,.5);
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	z-index: -1;
+	box-shadow: 0 0 0 4px rgba(255,255,255,.5);
+}
+.cr-container input:checked + label{
+	color: rgba(130,195,217,.9);
+}
+.cr-container input:checked + label:before{
+	background: #fff;
+	box-shadow: 0 0 0 4px rgba(130,195,217,.3);
+}
+.cr-container label:after{
+	position: absolute;
+	content: "";
+	height: 400px;
+	width: 1px;
+	bottom: -20px;
+	left: 150px;
+	background: -webkit-linear-gradient(#ffffff00,#fff);
+	background:    -moz-linear-gradient(#ffffff00,#fff);
+	background:      -o-linear-gradient(#ffffff00,#fff);
+	background:         linear-gradient(#ffffff00,#fff);
+	filter: progid:DXImageTransform:Microsoft.gradient(starColorstr="00fffff",endColorstr="#fffff",GradienType=0);
+}
+.cr-container label:last-child:after{
+	width: 0;
+}
+.cr-bgimg{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.cr-bgimg div{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 400px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+/*每个div下的第一个span存的都是第一张图片，第二个span存第二张图以此类推*/
+.cr-bgimg div span:nth-child(1){
+	background: url(../img/img1.jpg);
+}
+.cr-bgimg div span:nth-child(2){
+	background: url(../img/img2.jpg);
+}
+.cr-bgimg div span:nth-child(3){
+	background: url(../img/img3.jpg);
+}
+.cr-bgimg div span:nth-child(4){
+	background: url(../img/img4.jpg);
+}
+/*第n个div下的span存的是不同图片，同样的第n部分*/
+.cr-bgimg div:nth-child(1) span{
+	background-position: 0 0;
+}
+.cr-bgimg div:nth-child(2) span{
+	background-position: -150px 0;
+}
+.cr-bgimg div:nth-child(3) span{
+	background-position: -300px 0;
+}
+.cr-bgimg div:nth-child(4) span{
+	background-position: -450px 0;
+}
