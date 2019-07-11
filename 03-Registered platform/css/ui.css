@@ -1,0 +1,207 @@
+/*头部搜索框ui开始*/
+.ui_header_search .ui_search{
+	float: left;
+	position: relative;
+	width: 55px;
+	height: 38px;
+	padding-left: 14px;
+	border-radius: 5px 0 0 5px;
+	font-size: 14px;
+	line-height: 38px;
+	color: #ffffff;
+	background-color: #fec209;
+}
+.ui_header_search span{
+	position: absolute;
+	top:17px;
+	right: 9px;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+}
+.ui_search i{
+	position: absolute;
+	top: -20px;
+	font-style: normal;
+	font-size: 29px;
+}
+.ui_search_select_list{
+	display: none;
+}
+.ui_header_search .ui_search_select_list{
+	position: absolute;
+	top: 36px;
+	left: 2px;
+	width: 67px;
+	background: #fff;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+.ui_search_select_list li{
+	line-height: 24px;
+	text-align: center;
+}
+.ui_search_select_list li a{
+	display: block;
+	color: #a5a2a2;
+}
+.ui_search_select_list li a:hover{
+	background: #ebeef5;
+}
+.ui_search_input{
+	float: left;
+	width: 214px;
+	height: 34px;
+	padding: 1px;
+	outline: none;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #fec209;
+}
+.ui_search_subimt{	
+	float: left;
+	display: block;
+	width: 41px;
+	height: 38px;
+	border-radius: 0 5px 5px 0;
+	background: url(../img/ui-search.jpg) no-repeat center right;
+	background-color: #fec209;
+}
+.togglediv{
+	display: block;
+}
+/*头部搜索框ui结束*/
+
+/*导航栏科室部分开始*/
+.menu_list_classify{
+	height: 22px;
+	padding: 8px 5px 9px 8px;
+	line-height: 22px;
+}
+.menu_list h3{
+	float: left;
+}
+.menu_list h3 span{
+	float: left;
+	height: 22px;
+	width: 17px;
+	background: url(../img/icon-menu.jpg) no-repeat -22px 1px;
+}
+.menu_list h3 a{
+	display: block;
+	padding-left: 30px;
+	font-size: 13px;
+	line-height: 22px;
+	color: #fff;
+}
+.menu_list span{
+	float: right;
+	font-size: 12px;
+	padding-left: 5px;
+}
+.menu_list span a{
+	line-height: 22px;
+	color: #d7f3ff;
+}
+.menu_list_info{
+	display: none;
+	position: absolute;
+	top: 0;
+  	left: 190px;
+	width: 502px;
+  	height: 392px;
+  	padding: 20px 7px 10px 29px;
+  	background: #fff url(../img/bg-menu.jpg) no-repeat center;
+  	z-index:999;
+}
+.menu_list_info h4{
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #666;
+}
+.menu_list_info li{
+	float: left;
+	padding:0px 17px 5px 0;
+	line-height: 23px;
+}
+.menu_list_info li a{
+	font-size: 12px;	
+	color: #868686;
+}
+.menu_list_info li a:hover{
+	color: #006DB3;
+}
+.menu_list_info li a::after{
+    content: '|';
+}
+.menu_list_info div{
+	padding-bottom: 20px;
+}
+.menu_list_classify:hover{
+	background: #fff;
+}
+.menu_list_classify:hover h3 span{
+	background: url(../img/icon-menu.jpg) no-repeat 0 0;
+}
+.menu_list_classify:hover h3 a{
+	color: #868686;
+}
+.menu_list_classify:hover span a{
+	color: #666;
+}
+/*导航栏科室部分结束*/
+
+/*banner横幅幻灯片部分开始*/
+.banner_slider{
+	position: relative;
+	overflow: hidden;
+}
+.banner_slider_content_box{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 9999px;
+}
+.banner_slider .banner_slider_content img{
+	float: left;
+	width: 544px;
+	height: 414px;
+}
+.banner_slider .arrow_left{
+	position: absolute;
+	top: 187px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url(../img/ui-slider-arrow.png) no-repeat center left;
+}
+.banner_slider .arrow_right{
+	position: absolute;
+	top: 187px;
+	left: 504px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url(../img/ui-slider-arrow.png) no-repeat center right;
+}
+.banner_slider .banner_slider_process{
+	position: absolute;
+	top: 381px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+.banner_slider .banner_slider_process span{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url(../img/ui-slider-process.png) no-repeat;
+	background-position: 0 0;
+}
+.banner_slider .banner_slider_process .active{
+	background: url(../img/ui-slider-process.png) no-repeat;
+	background-position: -23px 0;
+}
+/*banner横幅幻灯片部分结束*/
